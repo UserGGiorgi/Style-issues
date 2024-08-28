@@ -1,4 +1,4 @@
-﻿using System.Globalization;
+using System.Globalization;
 
 namespace StyleIssues.CA1304
 {
@@ -6,7 +6,7 @@ namespace StyleIssues.CA1304
     {
         public static string MyMethod(string str)
         {
-            return "K-" + str.ToUpper();
+            return "K-" + str.ToUpper(new CultureInfo("en-US"));
         }
     }
 }
