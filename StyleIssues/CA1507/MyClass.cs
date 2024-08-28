@@ -1,4 +1,4 @@
-﻿namespace StyleIssues.CA1507
+namespace StyleIssues.CA1507
 {
     public static class MyClass
     {
@@ -6,7 +6,7 @@
         {
             if (str == null)
             {
-                throw new ArgumentNullException("str");
+                throw new ArgumentNullException(str);
             }
 
             return "test" + str;

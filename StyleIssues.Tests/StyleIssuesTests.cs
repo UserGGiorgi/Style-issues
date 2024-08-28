@@ -110,7 +110,7 @@ namespace StyleIssues.Tests
         [Test]
         public void CA1507_MyMethod_ThrowsArgumentNullException()
         {
-            Assert.Throws<ArgumentNullException>(() => CA1507.MyClass.MyMethod(null));
+            var result = Assert.Throws<ArgumentNullException>(() => CA1507.MyClass.MyMethod(null));
         }
 
         [Test]
